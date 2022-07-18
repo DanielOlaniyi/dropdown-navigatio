@@ -1,79 +1,78 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 body {
-    font-family: "Epilogue", sans-serif;
-    background-color: #fafafa;
+  font-family: "Epilogue", sans-serif;
+  background-color: #fafafa;
 }
 .wrapper {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 .nav-list {
-    display: flex;
-    /* justify-content: center; */
-    margin-left: 150px;
-    
+  display: flex;
+  /* justify-content: center; */
+  margin-left: 150px;
 }
 .nav-item {
-    margin-top: 30px;
-    margin-left: 30px;
-    padding-right: 20px;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-right: 20px;
 }
 .nav-link {
-    font-size: 16px;
-    color: grey;
-
+  font-size: 16px;
+  color: grey;
 }
 .dropdown {
-    margin-top: 20px;
-    /* background-color: white; */
-    position: relative;
-    /* z-index: 100; */
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(10%);
-    transition: all 0.1s;
-    height: 0;
+  margin-top: 20px;
+  /* background-color: white; */
+  position: relative;
+  /* z-index: 100; */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10%);
+  transition: all 0.1s;
+  height: 0;
+  padding: 10px 10px;
 }
 .nav-item:hover .dropdown {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
-    height: auto;
-    transition: all 0.1s 0.2s;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  height: auto;
+  transition: all 0.1s;
 }
 .dropdown-item {
-    text-align: left;
-    padding: 5px 5px 0 5px;
+  text-align: left;
+  padding: 8px 8px;
 }
 .dropdown-item:last-child {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 .dropdown-link {
-    color: grey;
+  color: grey;
 }
 .dropdown-bg {
-    /* width: 120px;
-    height: 150px; */
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 2px #d3d3d3;
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s;
+  /* width: 100%;
+  height: 100%; */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 2px #d3d3d3;
+  position: absolute;
+  opacity: 1;
+  /* visibility: hidden; */
+  transition: all 0.05s;
 }
 .dropdown-bg::before {
-    content: "";
-    position: absolute;
-    border-left: 1rem solid transparent;
-    border-right: 1rem solid transparent;
-    border-bottom: 1rem solid white;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -100%);
+  content: "";
+  position: absolute;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 1rem solid white;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
 }
