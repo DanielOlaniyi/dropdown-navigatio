@@ -1,13 +1,9 @@
-const dropdownBg = document.querySelector(".dropdown-bg");
+const dropDown = document.getElementsByClassName("dropdown");
 
-Array.from(document.querySelectorAll(".nav-item")).forEach(item => {
-    item.onmouseover = () => {
-        dropdownBg.style.opacity = "1";
-        dropdownBg.style.visibility = "visible";
-
-        dropdownBg.style.width = getComputedStyle (item.lastElementChild).width;
-        dropdownBg.style.height = getComputedStyle (item.lastElementChild).height;
-    };
-});
-
-           
+if (dropDown) {
+  for (const drop of dropDown) {
+    drop.addEventListener("mouseover", function msEnter() {
+      drop.classList.add("dropdown-bg");
+    });
+  }
+}
